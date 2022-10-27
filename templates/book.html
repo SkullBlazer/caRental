@@ -1,0 +1,47 @@
+<head>
+    <title> CaRental - Book a Car </title>
+    <link rel="icon" href="{{url_for('static', filename='src/icon.jpg')}}" type="image/x-icon">
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class = "navbar">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/"><input type="image" src="{{url_for('static', filename='src/carental.jpg')}}" height="100" width="135"/></a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <!-- <li><a href="login"><button class="register"> Sign in/Sign up</button></a></li> -->
+                <li style="color:#f4f5f6">Logged in</li>
+            </ul>
+        </nav>
+    </div>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <h1>Rent in 3 easy steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <h2>1. Choose a location</h2>
+                <p>Enter the address of the location you will be arriving at, i.e. your destination</p>
+            </div>
+
+            <div class="box">
+                <h2>2. Pick-up date</h2>
+                <p>Enter the date from when you will pick up the car from one of our dealerships.</p>
+            </div>
+
+            <div class="box">
+                <h2>3. Return date</h2>
+                <p>Enter the last date of renting the car. You have to return the car back to the dealership, where the fees will be calculated according to the time used and the damage, and you can pay either by cash or online.</p>
+            </div>
+        </div>
+        <form method="post" action="/book">
+            <div class="input-box">
+                <input type="search" name="name" id="" placeholder="Search Places" required/>
+                <input type="date" name="start" id="" required/>
+                <input type="date" name="stop" id="" required/>
+            </div>
+            <button class="summit2">Book</button>
+        </form>
+    </section>
+</body>

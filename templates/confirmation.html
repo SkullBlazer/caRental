@@ -1,0 +1,48 @@
+<head>
+    <title> CaRental - Pick Car Model </title>
+    <link rel="icon" href="{{url_for('static', filename='src/icon.jpg')}}" type="image/x-icon">
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class = "navbar">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/"><input type="image" src="{{url_for('static', filename='src/carental.jpg')}}" height="100" width="135"/></a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <!-- <li><a href="login"><button class="register"> Sign in/Sign up</button></a></li> -->
+                <li style="color:#f4f5f6">Logged in</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="heading">
+        <h1>Confirmation</h1>
+    </div>
+    <div class="form-box">
+        <div class="boxx">
+            <h3>Name: Harsh Gupta</h3>
+        </div>
+        <div class="boxx">
+            <h3>Phone number: 9811146789</h3>
+        </div>
+        <div class="boxx">
+            <h3>Destination: Chennai</h3>
+        </div>
+        <div class="boxx">
+            <h3>Start date: 22-11-2021</h3>
+        </div>
+        <div class="boxx">
+            <h3>Return date: 28-11-2021</h3>
+        </div>
+        <div class="boxx">
+            <h3>Model: Maruti Suzuki Ciaz</h3>
+        </div>
+        <div class="boxx">
+            <h3>Rent: ₹500/hour</h3>
+        </div>
+        <br>
+        <h3 style="text-align: center; color: #fff;">Are you sure you want to continue?</h3>
+        <button href="model" class="summit5">Cancel</button>
+        <button href="" class="summit4">Yes</button>
+    </div>
+</body>

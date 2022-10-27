@@ -1,0 +1,105 @@
+<head>
+    <title> CaRental - Pick Car Model </title>
+    <link rel="icon" href="{{url_for('static', filename='src/icon.jpg')}}" type="image/x-icon">
+    <link href="{{url_for('static', filename='css/main.css')}}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class = "navbar">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="/"><input type="image" src="{{url_for('static', filename='src/carental.jpg')}}" height="100" width="135"/></a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <!-- <li><a href="login"><button class="register"> Sign in/Sign up</button></a></li> -->
+                <li style="color:#f4f5f6">Logged in</li>
+            </ul>
+        </nav>
+    </div>
+    <section class="services" id="services">
+        <div class="heading">
+            <h1>Explore our top deals</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car1.png')}}">
+                </div>
+                <p>2017</p>
+                <h3>Honda Civic</h3>
+                <h2>₹500<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car2.png')}}">
+                </div>
+                <p>2018</p>
+                <h3>Maruti Suzuki Ciaz</h3>
+                <h2>₹500<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car3.png')}}">
+                </div>
+                <p>2017</p>
+                <h3>Toyota Glanza</h3>
+                <h2>₹300<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car4.png')}}">
+                </div>
+                <p>2019</p>
+                <h3>Maruti Suzuki Ignis</h3>
+                <h2>₹200<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car5.png')}}">
+                </div>
+                <p>2018</p>
+                <h3>Tata Safari</h3>
+                <h2>₹700<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car6.png')}}">
+                </div>
+                <p>2019</p>
+                <h3>Toyota Innova</h3>
+                <h2>₹700<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car7.png')}}">
+                </div>
+                <p>2020</p>
+                <h3>Audi A7</h3>
+                <h2>₹1000<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="{{url_for('static', filename='src/car8.png')}}">
+                </div>
+                <p>2020</p>
+                <h3>Mini Cooper</h3>
+                <h2>₹5000<span>/hour</span></h2>
+                <a href="confirmation" class="summit3">Rent now</a>
+            </div>
+
+        </div>
+    </section>
+</body>
